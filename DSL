@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+## Parallel computation DSL using sourcify parsetree etc
+require 'pruby'
+
+include  pruby
+#
+# class Node
+# 	attr_accessor :ip
+# end
+# Node.execute(&block) is the basis
+Pruby::build do |node|
+	node.execute do
+
+	end
+end
+
+## use Proc.to_source to convert block to string and use push.rb to mail it to
+## worker nodes
